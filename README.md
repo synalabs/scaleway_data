@@ -21,6 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
+ScalewayData.organization
 ScalewayData.project
 ScalewayData.region
 ScalewayData.zone
@@ -30,12 +31,14 @@ ScalewayData.zone
 
 This library will return project, region and zone info using different sources with this precedence:
 
-1. Environment variables: SCW_DEFAULT_PROJECT_ID, SCW_DEFAULT_REGION, SCW_DEFAULT_ZONE
+1. Environment variables: SCW_DEFAULT_ORGANIZATION_ID, SCW_DEFAULT_PROJECT_ID, SCW_DEFAULT_REGION, SCW_DEFAULT_ZONE
 2. Defaults: region=fr-par and zone=fr-par-1
 
 ### 1. Environment variables
 
-The environment variables take the highest precedence: SCW_DEFAULT_PROJECT_ID, SCW_DEFAULT_REGION, SCW_DEFAULT_ZONE
+The environment variables take the highest precedence:
+
+SCW_DEFAULT_ORGANIZATION_ID, SCW_DEFAULT_PROJECT_ID, SCW_DEFAULT_REGION, SCW_DEFAULT_ZONE
 
 ### 2. Defaults
 
